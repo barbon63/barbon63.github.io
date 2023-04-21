@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>The Pizza Stop</title>
+
+<style>
+/* RELATES TO EXAMPLE FOUR ONLY */
+/* I named this ul class 'a' - it can be named anything  */
+ul.a {color: blue; text-decoration: underline;}
+</style>
+
+</head>
+<body bgcolor="LightYellow">
+<h1>Styling Lists - Four Examples</h1>
+<h2>There are several ways of underlining list items in blue, some better than others, but all will achieve the same result</h2
+
+<!-- EXAMPLE ONE: Individual opening and closing underline tags on each list item -->
+<ul style="color:blue;">
+  <li><u>Our Mission</u></li>
+  <li><u>Our Ingredients</u></li>
+  <li><u>The Head Chef</u></li>
+  <li><u>Satisfied Customers</u></li>
+</ul>
+
+<!-- EXAMPLE TWO: An opening underline tag BEFORE the list items and a closing underline tag AFTER the list items -->
+<ul style="color:blue;">
+   <u><li>Our Mission</li>
+      <li>Our Ingredients</li>
+      <li>The Head Chef</li>
+      <li>Satisfied Customers</li></u>
+</ul>
+
+<!-- EXAMPLE THREE: (Better!) Style the unordered list -->
+<ul style="color:blue; text-decoration: underline;">
+  <li>Our Mission</li>
+  <li>Our Ingredients</li>
+  <li>The Head Chef</li>
+  <li>Satisfied Customers</li>
+</ul>
+
+<!-- EXAMPLE FOUR: (Best!) Use a class -->
+<ul class="a">
+  <li>Our Mission</li>
+  <li>Our Ingredients</li>
+  <li>The Head Chef</li>
+  <li>Satisfied Customers</li>
+</ul>
+
+
+</body>
+</html>
