@@ -15,6 +15,19 @@ body, html {
 
 
 
+
+diamond {
+  overflow: hidden;
+  background-color: #222;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,.025) 10%, transparent 0),
+    linear-gradient(#222, #000);
+  background-size: .75em 100%, 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
 .wrapper {
   position: relative;
   flex-grow: 1;
@@ -323,7 +336,7 @@ function showSlides(n) {
 <!-- END OF DONNACHA GALLERY -->
 
 <!-- START OF MATTHEW2 GALLERY -->
-
+<div id="diamond">
 <div class="wrapper">
 
 <img src="mat1.jpg" class="matthew" alt="Norway" style="width:30%">
@@ -339,7 +352,7 @@ function showSlides(n) {
   <img src="mat9.jpg" class="matthew" alt="">
   <img src="mat10.jpg" class="matthew" alt="">
 </div>
-
+</div>
 <!-- END OF MATTHEW2 GALLERY -->
 
 <!-- START OF DONNACHA2 GALLERY -->
