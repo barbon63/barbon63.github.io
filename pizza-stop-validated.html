@@ -5,7 +5,7 @@
 <title>The Pizza Stop</title>
 
 <style>
-/* THIS WILL APPLY*/
+/* REFERS TO METHOD TWO*/
 img {
   display: block;
   width: 60%;
@@ -13,6 +13,7 @@ img {
   margin-right: auto;
 }
 
+/* REFERS TO METHOD THREE*/
 div {
 display: flex;
 justify-content: center;
@@ -32,19 +33,22 @@ p {text-align:center}
 The CENTER element was deprecated in HTML4.<br> 
 Now that HTML5 is the standard, this obsolete tag will likely not render in any modern browsers.</h2>
 
-<!-- THE OLD WAY TO CENTRE AN IMAGE -->
+<!-- METHOD ONE - NOW DEPRECATED - MAY STILL WORK BUT NOT GUARANTEED -->
 <center><img src="pizza.png" alt="pizza" width="500"></center>
-
 
 <h2 style="text-align:center;">To centre an image correctly now, you’ll need to use CSS</h2>
 
-<!-- THE NEW WAY TO CENTRE AN IMAGE, DEFINED WITHIN THE STYLE ELEMENT IN THE HEAD SECTION -->
+<!-- METHOD TWO - USING THE MARGIN PROPERTY -->
 <img width="500" src="pizza.png" alt="pizza">
 
+<!-- METHOD THREE - USING THE FLEX PROPERTY -->
 <div>
+<img width="500" src="pizza.png" alt="pizza">  
+</div>
 
+<!-- METHOD FOUR - USING THE TEXT-ALIGN PROPERTY -->
+<div style="text-align: center;">
 <img width="500" src="pizza.png" alt="pizza">
-  
 </div>
 
 
