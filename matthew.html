@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.wrapper {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  max-height: 1200px;
+  
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2vmin;
+  justify-items: center;
+  align-items: center;
+}
+
+IMG {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: scale(1);
+  transition: all .25s;
+  
+  &:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+  
+  &:hover {
+    z-index: 2;
+    transform: scale(2);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color: #7A7256;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Matthew {background-color: #7A7256;}
+#Donnacha {background-color: #7A7256;}
+#More-Matthew {background-color: #7A7256;}
+#More-Donnacha {background-color: #7A7256;}
+
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Matthew', this, '#7A7256')" id="defaultOpen">Matthew</button>
+<button class="tablink" onclick="openPage('Donnacha', this, '#7A7256')">Donnacha</button>
+<button class="tablink" onclick="openPage('More-Matthew', this, '#7A7256')">Matthew</button>
+<button class="tablink" onclick="openPage('More-Donnacha', this, '#7A7256')">Donnacha</button>
+
+<!-- START OF BEAUTIFUL MATTHEW GALLERY -->
+
+<div id="Matthew" class="tabcontent">
+  
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="6days.jpg" style="width:100%">  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="1month.jpg" style="width:100%">  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="2months.jpg" style="width:100%">  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="3months.jpg" style="width:100%">  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="4months.jpg" style="width:100%">  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+<!-- END OF BEAUTIFUL MATTHEW GALLERY -->
+
+<!-- START OF DONNACHA GALLERY --> 
+
+<div id="Donnacha" class="tabcontent">
+
+<div class="row">
+  <div class="column">
+    <img src="donnacha1.jpg" alt="Donnacha" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="donnacha2.jpg" alt="Donnacha" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="donnacha3.jpg" alt="Donnacha" style="width:100%">
+  </div>
+</div>
+ 
+</div>
+
+<!-- END OF DONNACHA GALLERY -->
+
+<!-- START OF MATTHEW2 GALLERY -->
+
+<div class="wrapper">
+  <img src="mat1.jpg" alt="">
+  <img src="mat2.jpg" alt="">
+  <img src="mat8.jpg" alt="">
+  <img src="mat4.jpg" alt="">
+  <img src="mat5.jpg" alt="">
+  <img src="mat6.jpg" alt="">
+  <img src="mat7.jpg" alt="">
+  <img src="mat3.jpg" alt="">
+  <img src="mat9.jpg" alt="">
+  <img src="mat10.jpg" alt="">
+</div>
+
+<!-- END OF MATTHEW2 GALLERY -->
+
+<!-- START OF DONNACHA2 GALLERY -->
+
+<div id="More-Donnacha" class="tabcontent">
+
+<div class="row">
+  <div class="column">
+    <img src="donnacha4.jpg" alt="Donnacha" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="donnacha5.jpg" alt="Donnacha" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="donnacha6.jpg" alt="Donnacha" style="width:100%">
+  </div>
+</div>
+  
+</div>
+
+<!-- END OF DONNACHA2 GALLERY -->   
+</body>
+</html> 
