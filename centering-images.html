@@ -18,6 +18,14 @@ div {
 display: flex;
 justify-content: center;
 }
+
+/* REFERS TO METHODS FIVE AND SIX*/
+.centre {text-align:center;}
+
+/* REFERS TO METHOD SEVEN*/
+.centretwo {
+display: flex;
+justify-content: center;
 </style>
 
 </head>
@@ -26,12 +34,12 @@ justify-content: center;
 
 <h2 style="text-align:center;">
 The CENTER element was deprecated in HTML4.<br> 
-Now that HTML5 is the standard, this obsolete tag will likely not render in any modern browsers.</h2>
+Now that HTML5 is the standard, this obsolete tag will likely not render in modern browsers.</h2>
 
 <!-- METHOD ONE - NOW DEPRECATED - MAY STILL WORK BUT NOT GUARANTEED -->
 <center><img src="pizza.png" width="500" alt="pizza"></center>
 
-<h2 style="text-align:center;">To centre an image correctly now, you’ll need to use CSS<br>Here are three ways</h2>
+<h2 style="text-align:center;">To centre an image correctly now, you’ll need to use CSS<br>Here are some ways you can do that...</h2>
 
 <!-- METHOD TWO - USING THE MARGIN PROPERTY -->
 <img width="500" src="pizza.png" alt="pizza">
@@ -45,6 +53,18 @@ Now that HTML5 is the standard, this obsolete tag will likely not render in any 
 <div style="text-align: center;">
 <img width="500" src="pizza.png" alt="pizza">
 </div>
+
+<!-- METHOD FIVE - USING A DIV/CLASS -->
+<div class="centre">
+<img width="500" src="pizza.png" alt="pizza">
+</div>
+
+<!-- METHOD SIX - USING A CLASS -->
+<img class="centre" width="500" src="pizza.png" alt="pizza">
+
+<!-- METHOD SEVEN - USING ANOTHER CLASS -->
+<img class="centretwo" width="500" src="pizza.png" alt="pizza">
+
 
 
 </body>
