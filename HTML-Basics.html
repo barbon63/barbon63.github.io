@@ -10,9 +10,8 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: Arial;
-  background-color: #e56b6f;
+  
 }
-
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -25,15 +24,9 @@ body, html {
   font-size: 17px;
   width: 25%;
 }
-
 .tablink:hover {
   background-color: #777;
 }
-
-/* RELATES TO EXAMPLE THREE ONLY */
-/* I named this ul class 'a' - it can be named anything  */
-ul.a {color: blue; text-decoration: underline;}
-
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
@@ -41,6 +34,12 @@ ul.a {color: blue; text-decoration: underline;}
   padding: 100px 20px;
   height: 100%;
 }
+#Home {background-color: #355070;}
+#Basic-Tags {background-color: #6d597a;}
+#Styling-Lists {background-color: #b56576;}
+#Centering-Images {background-color: #e56b6f;}
+
+/* START OF BASIC TAGS */
 .codeInline {
   font-family: monospace;
   background-color: whitesmoke;
@@ -51,12 +50,15 @@ ul.a {color: blue; text-decoration: underline;}
   padding-right: 4px;
   margin: 2px;
 }
+/* END OF BASIC TAGS */
 
-#Home {background-color: #355070;}
-#Basic-Tags {background-color: #6d597a;}
-#Styling-Lists {background-color: #b56576;}
-#Centering-Images {background-color: #e56b6f;}
+/* START OF STYLING LISTS */
+/* RELATES TO EXAMPLE THREE ONLY */
+/* I named this ul class 'a' - it can be named anything  */
+ul.a {color: blue; text-decoration: underline;}
+/* START OF STYLING LISTS */
 
+/* START OF CENTERING IMAGES*/
 /* REFERS TO METHOD TWO*/
 img {
   display: block;
@@ -78,6 +80,8 @@ justify-content: center;
 .centretwo {
 display: flex;
 justify-content: center;
+}
+/* END OF CENTERING IMAGES*/
 </style>
 </head>
 <body>
@@ -98,25 +102,33 @@ justify-content: center;
 <ul>
 <li>The<code class="codeInline">&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
 <li>The<code class="codeInline">&lt;html&gt;</code> element is the root element of an HTML page</li>
-<li>The<code class="codeInline">&lt;head&gt;</code> element contains meta information about the HTML page</li>
-<li>The<code class="codeInline">&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
-<li>The<code class="codeInline">&lt;body&gt;</code> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
-<li>The<code class="codeInline">&lt;h1&gt;</code>to<code class="codeInline">&lt;h6&gt;</code> elements define headings</li>
-<li>The<code class="codeInline">&lt;p&gt;</code> element defines a paragraph</li>
-<li>The<code class="codeInline">&lt;b&gt;</code> element makes text bold</li>
-<li>The<code class="codeInline">&lt;strong&gt;</code> element makes text bold</li>
-<li>The<code class="codeInline">&lt;i&gt;</code> element makes text italic</li>
+<li>The<code class="codeInline">&lt;head&gt;</code> tag contains meta information about the HTML page</li>
+<li>The<code class="codeInline">&lt;title&gt;</code> tag specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+<li>The<code class="codeInline">&lt;body&gt;</code> tag defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, lists, etc.</li>
+<li>The<code class="codeInline">&lt;h1&gt;</code>to<code class="codeInline">&lt;h6&gt;</code> tags define headings</li>
+<li>The<code class="codeInline">&lt;p&gt;</code> tag defines a paragraph</li>
+<li>The<code class="codeInline">&lt;b&gt;</code> tag specifies bold text without any extra importance</li>
+<li>The<code class="codeInline">&lt;strong&gt;</code> tag is used to define text with strong importance. It will appear the same as bold</li>
+<li>The<code class="codeInline">&lt;i&gt;</code> tag makes text italic</li>
+<li>The<code class="codeInline">&lt;br&gt;</code> tag represents a line break. It is an empty tag, which means that it doesn't have a closing tag</li>
+<li>The<code class="codeInline">&lt;ol&gt;</code> tag represents an ordered list. The list items will be marked with numbers by default</li>
+<li>The<code class="codeInline">&lt;ul&gt;</code> tag represents an unordered list. The list items will be marked with bullets by default</li>
+<li>The<code class="codeInline">&lt;img&gt;</code> tag is used to embed an image in a web page. It is an empty tag, which means that it doesn't have a closing tag.<br> It has two required attributes:
 
-
-<li><code class="codeInline">&lt;br&gt;</code> for break</li>
-<li><code class="codeInline">&lt;ol&gt;</code> is an ordered list</li> 
-<li><code class="codeInline">&lt;ul&gt;</code>&nbsp;for an unordered list</li>
-<li><code class="codeInline">&lt;li&gt;</code> is a list item in bulleted (ordered list)</li>
-<li><code class="codeInline">&lt;a&gt;</code> for link</li>
-<li><code class="codeInline">&lt;img&gt;</code> for images in document</li>
-<li><code class="codeInline">&lt;div&gt;</code> it is a division or part of an HTML document</li>
-<li><code class="codeInline">&lt;span&gt;</code>&nbsp;to style part of text</li>
+<ul>
+<li>src - Specifies the path to the image</li>
+<li>alt - Specifies an alternate text for the image</li>
 </ul>
+</li>
+
+<li>The<code class="codeInline">&lt;div&gt;</code> tag defines a division or a section in an HTML document and is used as a container for HTML elements</li>
+<li>The<code class="codeInline">&lt;span&gt;</code> tag is used when you want to style a particular part of your content differently</li>
+<li>The<code class="codeInline">&lt;a&gt;</code> tag defines a hyperlink. 
+<br>The most important attribute of the <code class="codeInline">&lt;a&gt;</code> element is the href attribute, 
+which indicates the link's destination.<br> The link text is the part that will be visible to the reader. 
+Clicking on the link text, will send the reader to the specified URL address.</li>
+</ul>
+
 </div>
 
 <div id="Styling-Lists" class="tabcontent">
