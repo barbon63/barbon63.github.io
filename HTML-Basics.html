@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* RELATES TO EXAMPLE THREE ONLY */
+/* I named this ul class 'a' - it can be named anything  */
+ul.a {color: blue; text-decoration: underline;}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.codeInline {
+  font-family: monospace;
+  background-color: whitesmoke;
+  color: #f22b11;
+  display: inline-block;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 2px;
+}
+
+#Home {background-color: #355070;}
+#Basic-Tags {background-color: #6d597a;}
+#Styling-Lists {background-color: #b56576;}
+#Centering-Images {background-color: #e56b6f;}
+
+/* REFERS TO METHOD TWO*/
+img {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* REFERS TO METHOD THREE*/
+div {
+display: flex;
+justify-content: center;
+}
+
+/* REFERS TO METHODS FIVE AND SIX*/
+.centre {text-align:center;}
+
+/* REFERS TO METHOD SEVEN*/
+.centretwo {
+display: flex;
+justify-content: center;
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#355070')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Basic-Tags', this, '#6d597a')">Basic Tags</button>
+<button class="tablink" onclick="openPage('Styling-Lists', this, '#b56576')">Styling Lists</button>
+<button class="tablink" onclick="openPage('Centering-Images', this, '#e56b6f')">Centering Images</button>
+
+<div id="Home" class="tabcontent">
+<h3>Home</h3>
+<p>Home is where the heart is..</p>
+</div>
+
+<div id="Basic-Tags" class="tabcontent">
+<h2>List of basic HTML tags:</h2>
+
+<ul>
+<li>The<code class="codeInline">&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document</li>
+<li>The<code class="codeInline">&lt;html&gt;</code> element is the root element of an HTML page</li>
+<li>The<code class="codeInline">&lt;head&gt;</code> element contains meta information about the HTML page</li>
+<li>The<code class="codeInline">&lt;title&gt;</code> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+<li>The<code class="codeInline">&lt;body&gt;</code> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+<li>The<code class="codeInline">&lt;h1&gt;</code>to<code class="codeInline">&lt;h6&gt;</code> elements define headings</li>
+<li>The<code class="codeInline">&lt;p&gt;</code> element defines a paragraph</li>
+<li>The<code class="codeInline">&lt;b&gt;</code> element makes text bold</li>
+<li>The<code class="codeInline">&lt;strong&gt;</code> element makes text bold</li>
+<li>The<code class="codeInline">&lt;i&gt;</code> element makes text italic</li>
+
+
+<li><code class="codeInline">&lt;br&gt;</code> for break</li>
+<li><code class="codeInline">&lt;ol&gt;</code> is an ordered list</li> 
+<li><code class="codeInline">&lt;ul&gt;</code>&nbsp;for an unordered list</li>
+<li><code class="codeInline">&lt;li&gt;</code> is a list item in bulleted (ordered list)</li>
+<li><code class="codeInline">&lt;a&gt;</code> for link</li>
+<li><code class="codeInline">&lt;img&gt;</code> for images in document</li>
+<li><code class="codeInline">&lt;div&gt;</code> it is a division or part of an HTML document</li>
+<li><code class="codeInline">&lt;span&gt;</code>&nbsp;to style part of text</li>
+</ul>
+</div>
+
+<div id="Styling-Lists" class="tabcontent">
+<h1>Styling Lists - Three Examples</h1>
+<h2>There are a few ways of underlining list items in blue, some better than others, but all will achieve the same result</h2>
+
+<!-- EXAMPLE ONE: Individual opening and closing underline tags on each list item -->
+<ul style="color:blue;">
+  <li><u>Our Mission</u></li>
+  <li><u>Our Ingredients</u></li>
+  <li><u>The Head Chef</u></li>
+  <li><u>Satisfied Customers</u></li>
+</ul>
+
+<!-- EXAMPLE TWO: (Better!) Style the unordered list -->
+<ul style="color:blue; text-decoration: underline;">
+  <li>Our Mission</li>
+  <li>Our Ingredients</li>
+  <li>The Head Chef</li>
+  <li>Satisfied Customers</li>
+</ul>
+
+<!-- EXAMPLE THREE: (Best!) Use a class -->
+<ul class="a">
+  <li>Our Mission</li>
+  <li>Our Ingredients</li>
+  <li>The Head Chef</li>
+  <li>Satisfied Customers</li>
+</ul>
+
+</div>
+
+<div id="Centering-Images" class="tabcontent">
+<h2 style="text-align:center;">
+The CENTER element was deprecated in HTML4.<br> 
+Now that HTML5 is the standard, this obsolete tag will likely not render in modern browsers.</h2>
+
+<!-- METHOD ONE - NOW DEPRECATED - MAY STILL WORK BUT NOT GUARANTEED -->
+<center><img src="pizza.png" width="500" alt="pizza"></center>
+
+<h2 style="text-align:center;">To centre an image correctly now, you’ll need to use CSS<br>Here are some ways you can do that...</h2>
+
+<!-- METHOD TWO - USING THE MARGIN PROPERTY -->
+<img width="500" src="pizza.png" alt="pizza">
+
+<!-- METHOD THREE - USING THE FLEX PROPERTY -->
+<div>
+<img width="500" src="pizza.png" alt="pizza">  
+</div>
+
+<!-- METHOD FOUR - USING THE TEXT-ALIGN PROPERTY -->
+<div style="text-align: center;">
+<img width="500" src="pizza.png" alt="pizza">
+</div>
+
+<!-- METHOD FIVE - USING A DIV/CLASS -->
+<div class="centre">
+<img width="500" src="pizza.png" alt="pizza">
+</div>
+
+<!-- METHOD SIX - USING A CLASS -->
+<img class="centre" width="500" src="pizza.png" alt="pizza">
+
+<!-- METHOD SEVEN - USING ANOTHER CLASS -->
+<img class="centretwo" width="500" src="pizza.png" alt="pizza">
+
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
