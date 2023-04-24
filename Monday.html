@@ -2,8 +2,11 @@
 <head>
 <title>The Pizza Stop</title>
 <style>
-/* This will mean that the background of the webpage is light yellow in colour */
-body {background-color: lightyellow;}
+/* This will mean that the background of the webpage is light yellow in colour with a solid blue border of 5 pixels */
+body {
+  background-color: lightyellow;
+  border: solid blue 5px;
+}
 
 /* This will mean that ALL images will be centered */
 img {
@@ -29,6 +32,11 @@ ul {
   color: blue;
   text-decoration: underline;
 }
+/* This will mean that ALL Horizontal Rules (<hr>) will extend across 60% of the page and will be 6 pixels and yellow */ 
+hr {
+  width: 60%;
+  border: 6px solid yellow;
+}
 /* This will mean that divs (<div>) will be have the following attributes */ 
 div {
   margin: auto; /* This ensures that div is centered */
@@ -51,7 +59,7 @@ div {
   <li>The Head Chef</li>
   <li>Satisfied Customers</li>
 </ul>
-
+<hr>
 <h2>We get things done the right way</h2>
 
 <img src="pizza.png" alt="pizza" width="500" height="250">
