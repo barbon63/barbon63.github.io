@@ -22,25 +22,10 @@ h2 {
 h3 { 
   text-align: center;
 }
-/* This will mean that ALL Unordered Lists (<ul>) will be blue, underlined and will display in a block, aligned to the left
-(this is important as it will be put into a div with a centre alignment. If this wasn't done, the list would also be centrally aligned) */ 
+/* This will mean that ALL Unordered Lists (<ul>) will be blue and underlined */ 
 ul {
   color: blue;
   text-decoration: underline;
-  display: inline-block;
-  text-align: left;
-}
-/* This will mean that ALL Ordered Lists (<ol>) will be green, underlined and will display in a block, aligned to the left
-(this is important as it will be put into a div with a centre alignment. If this wasn't done, the list would also be centrally aligned) */ 
-ol {
-  color: green;
-  text-decoration: underline;
-  display: inline-block;
-  text-align: left;
-}
-/* This is the div class that I will use for both lists */ 
-div.container {
-  text-align: center;
 }
 /* This will mean that ALL Horizontal Rules (<hr>) will extend across 60% of the page and will be 6 pixels and yellow */ 
 hr {
@@ -63,48 +48,27 @@ hr {
   width: 500px; /* This ensures that div is 500 pixels wide, which is the same width as the pizza image */
   height: 250px; /* This ensures that div is 250 pixels high, which is the same height as the pizza image */
 }
-/* This is a class to centre anything it is applied to */
-.centre {
-  text-align: center;
-}
-/* This makes a link jump to a specific part of a page */
-p:target {
-     
-}
-/* This is a class I made for the HOME button. I added extra styling */
-.right {
-  float: right;
-  text-decoration: underline;
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: underline;
-  margin: 4px 2px;
-}
 </style>
 </head>
 <body>
-<h1 class="centre">THE PIZZA STOP</h1>
-<p id="home" class="right">home</p>
-<div class="container">
+<center><h1>THE PIZZA STOP</h1></center>
+<a name="home" style="float:right;"><u>HOME</u></a>
+
 <ul>
   <li>Our Mission</li>
   <li>Our Ingredients</li>
   <li>The Head Chef</li>
   <li>Satisfied Customers</li>
 </ul>
-</div>
 <hr>
-<h2 class="centre">We get things done the right way</h2>
+<h2>We get things done the right way</h2>
 <div class="center"><a href="https://www.pizzamaking.com"><img src="pizza.png" alt="pizza" width="500" height="250"></a></div>
 <h3>We have pizza!</h3>
 
-<div class="centre"><a href="https://www.pizzahutdelivery.ie/">Order Pizza</a></div>
-<br>
+<a href="https://www.pizzahutdelivery.ie/">Order Pizza</a>
+
 <div class="friday">Friday night is party night <br>– eat as much as you can!</div>
-<div class="container">
+
 <ol>
   <li>Pepperoni</li>
   <li>Cheese &amp; Bacon</li>
@@ -112,7 +76,6 @@ p:target {
   <li>Pineapple and Mushroom</li>
   <li>Chicken with Peppers</li>
 </ol>
-</div>
 <br>
 <br>
 <br>
@@ -148,7 +111,7 @@ p:target {
 <br>
 <br>
 <br>    
-<a href="#home">Go to home</a>
+<a href="#home">Go to Home</a>
 <br>
 <br>
 <br>
