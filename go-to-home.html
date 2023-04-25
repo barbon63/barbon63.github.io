@@ -48,12 +48,17 @@ hr {
   width: 500px; /* This ensures that div is 500 pixels wide, which is the same width as the pizza image */
   height: 250px; /* This ensures that div is 250 pixels high, which is the same height as the pizza image */
 }
+p:target {
+  text-decoration: underline;   
+}
+.right {
+  float: right;
+}
 </style>
 </head>
 <body>
 <center><h1>THE PIZZA STOP</h1></center>
-<a name="home" style="float:right;"><u>HOME</u></a>
-
+<p id="home" class="right">home</p>
 <ul>
   <li>Our Mission</li>
   <li>Our Ingredients</li>
@@ -111,7 +116,7 @@ hr {
 <br>
 <br>
 <br>    
-<a href="#home">Go to Home</a>
+<a href="#home">Go to home</a>
 <br>
 <br>
 <br>
