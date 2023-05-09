@@ -3,19 +3,8 @@
 <head>
 <title>Images and Text</title>
 <style>
-@media (max-width: 650px) {
-  body {
-    display: block;
-    font-size: 80%;
-  }
-  p {
-    position: relative;
-    margin: -3rem 0 2rem 1rem;
-    padding: 1rem;
-    background: #fff;
-  }
-}
-body {
+
+#container {
   display: grid;
   padding: 2rem;
   grid-template-columns: 300px 1fr;
@@ -25,7 +14,7 @@ body {
   margin: 0 auto;
   font: 500 100%/1.5 system-ui;
 }
-img {
+.img1 {
   max-width: 100%;
   height: auto;
 }
@@ -36,16 +25,18 @@ img {
 </style>
 </head>
 <body>
-<img src="fruit4.jpg" alt="Buddha's Hand Fruit" height="200" width="200">
+<div id="container">
+<img src="fruit4.jpg" class="img1" alt="Buddha's Hand Fruit" height="200" width="200">
 <p><span class="heading">Buddha's Hand</span><br><br>This citrus fruit is found in China, India, and Japan. The fruit is more sweet than sour, and can be candied, distilled, or used in place of lemon zest in most recipes.</p>
 
-<img src="fruit3.png" alt="Durian Fruit" height="200" width="200">
+<img src="fruit3.png" class="img1" alt="Durian Fruit" height="200" width="200">
 <p><span class="heading">Durian</span><br><br>This south Asian fruit is spiky on the outside, soft and custardy on the inside, and infamous for its terrible smell (it’s banned in many public places in Singapore).</p>
 
-<img src="fruit5.jpg" alt="Star Apple Fruit" height="200" width="200">
+<img src="fruit5.jpg" class="img1" alt="Star Apple Fruit" height="200" width="200">
 <p><span class="heading">Star Apple</span><br><br>The Star Apple is almost too pretty to eat. It typically has a sweet, milky white pulp and its seeds make a starlike pattern in the fruit’s centre.</p>
 
-<img src="fruit6.jpg" alt="Longan Fruit" height="200" width="200">
+<img src="fruit6.jpg" class="img1" alt="Longan Fruit" height="200" width="200">
 <p><span class="heading">Longan</span><br><br>Also known as Dragon's Eye, this small juicy fruit is often eaten in China, and is a common ingredient in meals.</p>
+</div>
 </body>
 </html>
