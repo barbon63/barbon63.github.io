@@ -18,8 +18,8 @@ h2.centre {
    text-align: center;
 }
 table.middle2 {
-  margin-left: auto;
-  margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
 }
 img {
    max-width: 100%;
@@ -32,10 +32,14 @@ img {
 .left{
    float: left;
 }
-ol {
-   display: inline-block;
-   text-align: left;
-   font-weight: bold;
+.left2 {
+   float: left;
+   background-color: #688B9A;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   margin: 4px 2px;
 }
 .center {
    margin: auto;
@@ -44,23 +48,18 @@ ol {
    border: 10px solid #47697E;
    text-align: center; 
 }
-.left2 {
-  float: left;
-  background-color: #688B9A;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  margin: 4px 2px;
+.img1 {
+   max-width: 100%;
+   height: auto;
 }
-.left3 {
-  float: left;
-  background-color: #688B9A;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  margin: 4px 2px;
+.heading {
+   font-size: 20px;
+   font-weight: bold;
+}
+ol {
+   display: inline-block;
+   text-align: left;
+   font-weight: bold;
 }
 table {
    border:4px solid darkgreen;   
@@ -70,22 +69,14 @@ th,td {
    border:1px solid darkgreen;
 }
 #container {
-  display: grid;
-  padding: 2rem;
-  grid-template-columns: 300px 1fr;
-  gap: 1rem;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  font: 500 100%/1.5 system-ui;
-}
-.img1 {
-  max-width: 100%;
-  height: auto;
-}
-.heading {
-  font-size: 20px;
-  font-weight: bold;
+   display: grid;
+   padding: 2rem;
+   grid-template-columns: 300px 1fr;
+   gap: 1rem;
+   align-items: center;
+   max-width: 800px;
+   margin: 0 auto;
+   font: 500 100%/1.5 system-ui;
 }
 </style>
 </head>
@@ -126,7 +117,6 @@ th,td {
 <li>Kiwi</li>
 </ol>
 </div>
-
 <div class="col left">
 <img src="fruit3.jpg" width="150" alt="fruit">
 </div>
@@ -186,7 +176,7 @@ th,td {
 <br>
 <br>
 <br>
-<a href="#home" class="left3">Go to home</a>
+<a href="#home" class="left2">Go to home</a>
 <br>
 <br>
 <br>
