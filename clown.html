@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive Unusual Fruits</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #D2E267;
+   border: solid #008000 5px;
+}
+.header {
+   background-image: url(clown-banner.jpg);
+   height: 535px;
+   padding: 30px;
+   text-align: center; 
+}
+h1.centre {
+   text-align: center;
+   clear: both;
+}
+h2.centre {
+   text-align: center;
+   font-style: italic;
+}
+.underline {
+   text-decoration: underline;
+}
+ol {
+   display: inline-block;
+   text-align: left;
+   font-weight: bold;
+}
+.left2 {
+   float: left;
+   background-color: #688B9A;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   margin: 4px 2px;
+   text-transform: uppercase;
+}
+.center {
+   margin: auto;
+   width: 20%;
+   background-color: lightblue;
+   border: 10px solid #47697E;
+   text-align: center;
+   text-transform: uppercase; 
+}
+.middle {
+   text-align: center;
+}
+table.middle2 {
+   margin-left: auto;
+   margin-right: auto;
+}
+table {
+   border:2px solid green;   
+}
+td {
+   background-color: #edda74;
+   border:1px solid darkgreen;
+}
+th {
+   background-color: #edda74;
+   border:1px solid darkgreen;
+   text-transform: uppercase;
+}
+/* Four images with text beside */
+div {
+  padding: 5px;
+}
+.img1 {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+.clearfix {
+  overflow: auto;
+  display: inline-block;
+  text-align: left;
+}
+/* Three floated columns */
+.column {
+   float: left;
+   padding: 10px;
+}
+/* Left and right columns */
+.column.side {
+   width: 40%;
+   text-align: center;
+}
+/* Middle column */
+.column.middle {
+   width: 20%;
+   text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+.footer {
+   background-color: #D2E267;
+   padding: 10px;
+   text-align: center;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<p id="home" class="left2">home</p>
+<h1 class="centre">Unusual Fruits</h1>
+<h2 class="centre">Fruits you've probably never heard of</h2>
+
+<div class="header"></div>
+<br>
+<div class="center">fruit so juicy</div>
+<br>
+<div class="clearfix">
+<img class="img1" src="fruit4.jpg" alt="Buddha's Hand Fruit">
+<h3>Buddha's Hand</h3>
+This citrus fruit is found in China, India, and Japan. The fruit is more sweet than sour, and can be candied, distilled, or used in place of lemon zest in most recipes.
+</div>
+
+<div class="clearfix">
+<img class="img1" src="fruit3.png" alt="Durian Fruit">
+<h3>Durian</h3>
+This south Asian fruit is spiky on the outside, soft and custardy on the inside, and infamous for its terrible smell (it’s banned in many public places in Singapore).
+</div>
+
+<div class="clearfix">
+<img class="img1" src="fruit5.jpg" alt="Star Apple Fruit">
+<h3>Star Apple</h3>
+The Star Apple is almost too pretty to eat. It typically has a sweet, milky white pulp and its seeds make a starlike pattern in the fruit’s centre.
+</div>
+
+<div class="clearfix">
+<img class="img1" src="fruit6.jpg" alt="Longan Fruit">
+<h3>Longan</h3>
+Also known as <span class="underline">Dragon's Eye</span>, this small juicy fruit is often eaten in China, and is a common ingredient in meals.
+</div>
+
+<div class="middle"><a href="https://www.bordbia.ie/" target="_blank"><h3>Healthy Eating</h3></a></div>
+<div class="row">
+<div class="column side"><a href="https://www.slimmingworld.ie/" target="_blank"><img src="sw.png" width="200" alt="slimming world logo"></a></div>
+<div class="column middle">
+<ol>
+<li>Apples</li>
+<li>Oranges</li>
+<li>Pears</li>
+<li>Bananas</li>
+<li>Grapes</li>
+<li>Kiwi</li>
+</ol>
+</div>
+<div class="column side"><a href="https://www.allrecipes.com/" target="_blank"><img src="ar.png" width="200" alt="all recipes logo"></a></div>
+</div>
+
+<div class="footer">
+<img src="fruit4.png" width="70" alt="strawberries">
+<img src="fruit5.png" width="70" alt="oranges">
+<img src="fruit6.png" width="70" alt="avocados">
+<img src="fruit7.png" width="70" alt="pineapple">
+<img src="fruit8.png" width="70" alt="apples">
+<img src="fruit9.png" width="70" alt="pomegranate">
+
+<table class="middle2">
+  <tr>
+    <th>fruit sales</th>
+    <th>jan</th>
+    <th>feb</th>
+    <th>march</th>
+  </tr>
+  <tr>
+    <td>Apples</td>
+    <td>304</td>
+    <td>202</td>
+    <td>239</td>
+  </tr>
+  <tr>
+    <td>Oranges</td>
+    <td>302</td>
+    <td>394</td>
+    <td>848</td>
+  </tr>
+  <tr>
+    <td>Pears</td>
+    <td>939</td>
+    <td>833</td>
+    <td>873</td>
+  </tr>
+  <tr>
+    <td>Bananas</td>
+    <td>843</td>
+    <td>783</td>
+    <td>383</td>
+  </tr>
+  <tr>
+    <td>Grapes</td>
+    <td>844</td>
+    <td>878</td>
+    <td>674</td>
+  </tr>
+  <tr>
+    <td>Kiwi</td>
+    <td>546</td>
+    <td>457</td>
+    <td>599</td>
+  </tr>  
+</table>
+<br>
+<br>
+<br>
+<a href="#home" class="left2">go to home</a>
+<br>
+<br>
+<br>
+</div>
+
+</body>
+</html>
