@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Reset some default browser styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styles */
+    .header {
+      background-image: url('header-photo.jpg');
+      background-size: cover;
+      height: 300px;
+    }
+
+    /* Navigation bar styles */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer .footer-container .footer-item {
+      flex-basis: 23%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .footer .footer-container .footer-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Content styles */
+    .content {
+      padding: 20px;
+    }
+
+    .content div {
+      background-color: #f2f2f2;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      /* Adjust header height for smaller screens */
+      .header {
+        height: 200px;
+      }
+
+      /* Stack footer items in mobile view */
+      .footer .footer-container .footer-item {
+        flex-basis: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      /* Adjust header height for tablet screens */
+      .header {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header"></div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="content">
+    <div>
+      <h2>Div 1</h2>
+      <p>This is the content of Div 1.</p>
+    </div>
+
+    <div>
+      <h2>Div 2</h2>
+      <p>This is the content of Div 2.</p>
+    </div>
+
+    <div>
+      <h2>Div 3</h2>
+      <p>This is the content of Div 3.</p>
+    </div>
+
+    <div>
+      <h2>Div 4</h2>
+      <p>This is the content of Div 4.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-item">
+        <img src="social.png" alt="Footer Image 1">
+        <h3>Footer Item 1</h3>
+        <p>This is the content of Footer Item 1.</p>
+      </div>
+      <div class="footer-item">
+        <img src="office.png" alt="Footer Image 1">
+        <h3>Footer Item 2</h3>
+        <p>This is the content of Footer Item 2.</p>
+      </div>
+      <div class="footer-item">
+        <img src="phone.png" alt="Footer Image 1">
+        <h3>Footer Item 3</h3>
+        <p>This is the content of Footer Item 3.</p>
+      </div>
+      <div class="footer-item">
+        <img src="twitter.png" alt="Footer Image 1">
+        <h3>Footer Item 4</h3>
+        <p>This is the content of Footer Item 4.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
