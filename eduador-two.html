@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("volcano.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+/* Does this media query conflict with other two? */
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+}
+.footer {
+   width: 100%;
+   height: 100px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Beautiful Equador</h1>
+    <button>Book today!</button>
+  </div>
+</div>
+
+<ul class="topnav">
+  <li><a href="#home">Home</a></li>
+  <li><a class="active" href="#sights">Places to see</a></li>
+  <li><a href="#about">How to get there</a></li>
+  <li><a href="#contact">Contact</a></li>  
+</ul>
+
+<!--Start of The Galapagos Islands-->
+
+<div style="padding:0 16px;">
+  <h2>The Galapagos Islands</h2>
+  <p>The Galapagos Islands is a volcanic archipelago in the Pacific Ocean. 
+It's considered one of the world's foremost destinations for wildlife-viewing. 
+A province of Ecuador, it lies about 1,000km off its coast. 
+Its isolated terrain shelters a diversity of plant and animal species, 
+many found nowhere else. Charles Darwin visited in 1835, and his observation of 
+Galapagos' species later inspired his theory of evolution.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="galapagos.jpg" alt="Galapagos Islands, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="galapagos2.jpg" alt="Galapagos Islands, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="galapagos3.jpg" alt="Galapagos Islands, Equador" style="width:100%">
+  </div>
+</div>
+
+<!--End of The Galapagos Islands-->
+
+<!--Start of Mindo-->
+
+<div style="padding:0 16px;">
+  <h2>Mindo</h2>
+  <p>From adrenaline and adventure to delicious food and relaxation, 
+in combination with astonishing nature views, Mindo Ecuador has it all. 
+And not only that, besides the more than 500 species of birds 
+(there is no other place in Ecuador where you can spot as many birds as here), 
+Mindo homes a vast variety of beautiful orchids and butterflies.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="mindo.jpg" alt="Mindo, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="mindo2.jpg" alt="Mindo, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="mindo3.jpg" alt="Mindo, Equador" style="width:100%">
+  </div>
+</div>
+
+<!--End of Mindo-->
+
+<!--Start of Quito-->
+
+<div style="padding:0 16px;">
+  <h2>Quito</h2>
+  <p>Quito, Ecuador's capital, sits high in the Andean foothills 
+at an altitude of 2,850m. Constructed on the foundations of an 
+ancient Incan city, it’s known for its well-preserved colonial center, 
+rich with 16th- and 17th-century churches and other structures blending
+ European, Moorish and indigenous styles. These include the cathedral,
+ in the Plaza Grande square, and ultra-ornate Compañia de Jesus Jesuit church.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="quito.jpg" alt="Quito, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="quito2.jpg" alt="Quito, Equador" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="quito3.jpg" alt="Quito, Equador" style="width:100%">
+  </div>
+</div>
+
+<!--End of Quito-->
+
+<div class="footer">
+<p>Copyright &#169; 2023</p>
+</div>
+</body>
+</html>
