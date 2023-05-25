@@ -1,90 +1,55 @@
- /* Reset some default browser styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Header styles */
-    .header {
-      background-image: url('tulips1.png');
-      background-size: cover;
-      height: 300px;
-    }
-
-    /* Navigation bar styles */
-    .navbar {
-      background-color: #333;
+.container {
       overflow: hidden;
     }
 
-    .navbar a {
+    .column {
       float: left;
-      display: block;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .navbar a:hover {
-      background-color: #555;
-    }
-
-    /* Footer styles */
-    .footer {
-      background-color: #333;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .footer .footer-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .footer .footer-container .footer-item {
-      flex-basis: 23%;
-      padding: 10px;
+      width: 33.33%;
       box-sizing: border-box;
+      padding: 10px;
     }
 
-    .footer .footer-container .footer-item img {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
+    .column img {
+      width: 100%;
+      max-width: 200px; /* Adjust the max-width as needed */
+      display: block;
+      margin: 0 auto 20px; /* Add margin-bottom for spacing */
     }
 
-    /* Content styles */
-    .content {
-      padding: 20px;
+    .column h1 {
+      margin-top: 0;
     }
 
-    .content div {
-      background-color: #f2f2f2;
-      margin-bottom: 20px;
-      padding: 20px;
+    .column ul {
+      margin-top: 0;
+      padding-left: 20px;
     }
 
-    /* Responsive styles */
-    @media screen and (max-width: 600px) {
-      /* Adjust header height for smaller screens */
-      .header {
-        height: 200px;
-      }
-
-      /* Stack footer items in mobile view */
-      .footer .footer-container .footer-item {
-        flex-basis: 100%;
-      }
+    .column table {
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    @media screen and (max-width: 1024px) {
-      /* Adjust header height for tablet screens */
-      .header {
-        height: 250px;
-      }
+    .column th,
+    .column td {
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .section {
+      clear: both;
+      margin-top: 20px;
+    }
+
+    .section h1 {
+      margin-top: 0;
+    }
+
+    .section ul {
+      margin-top: 0;
+      padding-left: 20px;
+    }
+
+    hr {
+      margin-top: 20px;
     }
