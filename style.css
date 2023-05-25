@@ -1,55 +1,91 @@
-.container {
-      overflow: hidden;
+body {
+      background-color: teal;
+      border: 5px solid black;
     }
 
-    .column {
+    h1 {
+      text-align: center;
+      color: yellow;
+    }
+
+    h2 {
+      text-align: left;
+      color: yellow;
+      font-style: italic;
+    }
+
+    h3 {
+      text-align: center;
+      color: yellow;
+    }
+
+    #menu1, #menu2, #menu3, #menu4, #menu5 {
+      background-color: yellow;
+      margin: 5px 5px;
+      padding: 20px;
+      text-decoration: underline;
+      width: 60px;
       float: left;
-      width: 33.33%;
-      box-sizing: border-box;
-      padding: 10px;
     }
 
-    .column img {
-      width: 100%;
-      max-width: 200px; /* Adjust the max-width as needed */
+    .centered-image {
       display: block;
-      margin: 0 auto 20px; /* Add margin-bottom for spacing */
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .column h1 {
-      margin-top: 0;
-    }
-
-    .column ul {
-      margin-top: 0;
-      padding-left: 20px;
-    }
-
-    .column table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .column th,
-    .column td {
-      padding: 5px;
-      border: 1px solid #ccc;
-    }
-
-    .section {
-      clear: both;
-      margin-top: 20px;
-    }
-
-    .section h1 {
-      margin-top: 0;
-    }
-
-    .section ul {
-      margin-top: 0;
-      padding-left: 20px;
+    .opening-hours {
+      text-align: center;
+      color: yellow;
     }
 
     hr {
+      border: none;
+      border-top: 10px solid yellow;
+      width: 100%;
+    }
+
+    .column-container {
+      display: flex;
+      justify-content: space-between;
       margin-top: 20px;
+    }
+
+    .column {
+      flex-basis: 23%;
+    }
+
+    .float-right {
+      margin: 10px;
+      clear: both;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .paragraph-container {
+      margin-top: 20px;
+    }
+
+    .paragraph-container::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .paragraph {
+      width: calc(50% - 40px); /* Adjust the width based on your preference */
+      margin-right: 40px;
+    }
+
+    .paragraph h1 {
+      margin-top: 0;
+      text-align: left;
+    }
+    
+    .left-float {
+      float: left;
+      margin-right: 20px;
     }
