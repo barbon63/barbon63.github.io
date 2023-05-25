@@ -1,146 +1,169 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>HTML Introduction</title>
-<!-- This element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab) -->
-
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<!-- A favicon is a small icon that serves as branding for your website. 
-Its main purpose is to help visitors locate your page easier when they have multiple tabs open.
-Here I have chosen a confused face smiley -->
-
+<title>Urban Bistro</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-<h1>Just a few things that might help you!</h1>
+<h1>Urban Bistro</h1>
+<h3>Fine Dining at <br>Affordable Prices</h3>
+  
+<div id="menu1">Home</div>
+<div id="menu2">About</div>
+<div id="menu3">Menu</div>
+<div id="menu4">Bar</div>
+<div id="menu5">Terrace</div>
 
-<!-- START OF PARAGRAPHS AND HEADINGS -->
-<h2><u>Paragraphs and Headings</u></h2>
-<p>This is a normal paragraph.</p>
+<img src="bistro.jpg" class="centered-image" alt="Bistro Image" width="1024" height="240">
+<h3 class="opening-hours">
+Opening Hours:<br>
+Monday-<br>
+Saturday<br><br><br>
+4pm - 11.30pm
+</h3>
 
-<p><b><i>This is a paragraph in italics and bold.</i></b></p>
-<!-- Note that it is recommended to always close nested tags in the reverse order that they were opened. -->
+<hr>
 
-<p style="color:red;"><i><b>This is a paragraph in italics, bold and red.</b></i></p>
-<!-- Once again, the tags are nested -->
+<div class="column-container">
+<div class="column">
+<p>It may sound obvious but serving delicious food is one of the key elements of a successful restaurant. You can have a fantastic location, friendly servers and good marketing but customers won't give you</p>
+</div>
+<div class="column">
+<p>a second look if your food is not up to par. One of the key characteristics of a successful restaurant is a positive customer experience.
+The staff who interact with your guests should be courteous and maintain a</p>
+</div>
+<div class="column">
+<p>positive attitude. Then comes menu pricing. Customers will flock to the competition if your food is too expensive for the location and the ingredients you're offering.
+At Urban Bistro we tick all the boxes!!</p>
+</div>
+<div class="column">
+<img src="bistro2.jpg" alt="Floating Image">
+</div>
+</div>
 
-<p style="color:blue;font-size:50px;">This is a paragraph in size 50 blue font</p>
+<hr>
 
-<h1>This is Heading 1</h1>
-<h2>This is Heading 2</h2>
-<h3>This is Heading 3</h3>
-<h4>This is Heading 4</h4>
-<h5>This is Heading 5</h5>
-<h6>This is Heading 6</h6>
+<div class="paragraph-container">
+<div class="paragraph">
+<img src="bistro3.jpg" class="left-float" alt="Bistro Image">
+<h2>ABOUT</h2>
+<p>Urban Bistro is the perfect place to dine in Dublin. This restaurant is in the heart
+of the city and upholds the history of the area by maintaining the constant pursuit of
+perfection and takes its inspiration from the veritable taste of the Mediterranean.
+We create a restaurant experience that you won't be able to stay away from!</p>
 
-<!-- END OF PARAGRAPHS AND HEADINGS -->
+<p>The culinary approach is adventurous and thought provoking with classic dishes reinterpreted without
+losing their authenticity. Highlighting their trademark of limitless imagination, true passion for
+local food, our Chefs pay tribute to both the Irish produce and the traditions of Mediterranean Cuisine.</p>
+</div>
+<div class="clear"></div>
+</div>
 
-<br>
+<hr>
 
-<!-- START OF CREATING LISTS -->
-
-<h2><u>How to create lists</u></h2>
-<p>This is an Unordered List</p>
+<div class="paragraph-container">
+<div class="paragraph">
+<img src="bistro3.jpg" class="left-float" alt="Image 2">
+<h2>MENUS</h2>
 
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>  
+<li>All Day Breakfast</li>
+<li>Lunch Specials</li>
+<li>Dinner</li>
+<li>Evening Snacks</li>
+</ul>
 
-<p>This is an Ordered List</p>
+</div>
+<div class="clear"></div>
+</div>
 
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
+<hr>
 
-<!-- END OF CREATING LISTS -->
+<div class="three-column-container">
+<div class="column2">
+<img src="bistro3.jpg" alt="Image">
+</div>
+<div class="column2">
+<h2>BAR</h2>
 
-<br>
+<ul>
+<li>Large Selection of Lagers</li>
+<li>Extensive Cocktail Menu</li>
+<li>Irish Whiskey</li>
+<li>Best Gin in Town</li>
+<li>Extensive Wine List</li>
+<li>Live Music</li>
+<li>Theme Nights</li>
+<li>Happy Hour Specials</li>
+</ul>
 
-<!-- START OF USING COLOURS -->
+</div>
+<div class="column2">
+<table>
+<tr>
+<th colspan="2" class="bolded">WINE LIST</th>
+   
+</tr>
+<tr>
+<td class="bolded">Brand</td>
+<td class="bolded">Price</td>    
+</tr>
 
-<h2><u>How to use colours</u></h2>
+<tr>
+<td>Cabernet Sauvigon</td>
+<td>€35.00</td>    
+</tr>
 
-<p>In HTML, a colour can be specified by using a colour name. HTML supports 140 standard colour names.</p>
+<tr>
+<td>Pinot Noir</td>
+<td>€33.00</td>   
+</tr>
 
-<p>Link to <a href="https://www.computerhope.com/jargon/w/w3c-color-names.htm">full list of Colour Names</a> supported by all modern browsers.</p>
+<tr>
+<td>Chardonnay</td>
+<td>€36.50</td>   
+</tr>
 
-<p>In addition to the predefined colour names, colours can be specified in other ways, one of which is HEX (hexadecimal). 
-Hex colour codes start with a hashtag (#) and are followed by six letters and/or numbers.
+<tr>
+<td>Sauvigon Blanc</td>
+<td>€37.00</td>    
+</tr>
 
-<!-- Note here that I have used the span tag in order to have specific words (red, green and blue) in particular colours and bold -->
- 
-The first two letters/numbers refer to the colour <span style="font-weight:bold; color: red">red</span>,
-the next two to <span style="font-weight:bold; color: green">green</span>,
-and the last two to <span style="font-weight:bold; color: blue">blue</span>.
- 
-The color values are defined in values between 00 and FF. 000000 is black, the absence of colour and ffffff is white.
-It doesn't matter if the letters are typed in upper or lowercase.
-This gives you access to more than 16 million colours.</p>
+<tr>
+<td>Pinot Gris</td>
+<td>€38.25</td>    
+</tr>
 
-<p>Note that we use the American COLOR rather than COLOUR when defining these.</p>
+<tr>
+<td>Merlot</td>
+<td>€34.00</td>    
+</tr>
 
-<p>Here are some examples:</p>
+<tr>
+<td>Riesling</td>
+<td>€33.50</td>    
+</tr>
 
+<tr>
+<th colspan="2" class="bolded">Subject to VAT @ 23%</th>
+</tr>
+</table>
+</div>
+</div>
 
-<p style="background-color:Tomato;">Tomato background colour on a paragraph.</p>
+<hr> 
 
-<h1 style="color:Orange;">Heading 1 in Orange or you could use the HEX code #FFA500</h1>
+<div class="paragraph-container">
+<div class="paragraph">
+<img src="bistro3.jpg" class="left-float" alt="Image 2">
+<h2>TERRACE</h2>
+<p>Sed et dapibus nulla. Sed pellentesque lorem vel iaculis euismod. Suspendisse potenti. Aenean vitae interdum risus, id iaculis nunc. Ut auctor ipsum id erat semper, vitae efficitur felis consectetur.</p>
+</div>
+<div class="clear"></div>
+</div>
 
-<h2 style="color:Gray;">Heading 2 in Gray or HEX code #808080 (Note Gray OR Grey works)</h2>
-
-<!-- END OF USING COLOURS -->
-
-<br>
-
-<!-- START OF INSERTING IMAGES -->
-
-<h2><u>How to insert an image into your webpage</u></h2>
-
-<p>This needs more explanation. It is important that the path to the image is correct.</p>
-
-<p>Also, it is good practice to include the <u>height</u> and <u>width</u> so as the space required for the image is reserved when the page is loaded. Without these attributes, the browser does not know the size of the image, and cannot reserve the appropriate space for it.</p>
-
-<p>The <u>alt</u> attribute specifies an alternate text for an image if the image cannot be displayed or if the user uses a screen reader. In this case 'Shanganagh House' will display if, for whatever reason, the image doesn't load. Don't put something like 'image' or 'photo' in the alt but instead, describe the image.</p>
-
-
-<img src="Shanganagh_House_Shankill.jpg" alt="Shanganagh House"  width="400" height="282">
-
-<!-- END OF INSERTING IMAGES -->
-
-<br>
-
-<!-- START OF INSERTING VIDEOS -->
-
-<h2><u>How to insert a video into your webpage</u></h2>
-
-<p>As with the image, you should include the <u>height</u> and <u>width</u> of the video. If height and width are not set, the page might flicker while the video loads. 
-Any text between the opening and closing video tags will only be displayed in browsers that do not support the video element.</p>
-
-<p>If you'd prefer the video to start playing automatically, replace 'controls' with 'autoplay' or 'autoplay muted' for it to start playing without sound.</p>
-
-<video width="426" height="240" controls>
-  <source src="shanganagh.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<!-- END OF INSERTING VIDEOS -->
-
-<br>
-
-<!-- START OF INSERTING COMMENTS -->
-
-<h2><u>How to insert comments in your code</u></h2>
-
-<!-- This is a comment -->
-<p>In HTML, a comment is a section of text that is not processed by the web browser. Comments are enclosed in <! -- --> tags (as pictured below) and are a very useful way of organising your coding.</p>
-<!-- Comments are not displayed in the browser -->
-
-<img src="comments.jpg" alt="Comments in HTML"  width="524" height="128">
-
-<!-- END OF INSERTING COMMENTS -->
+<hr>
 
 </body>
 </html>
+
