@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Webpage</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+    }
+
+    #navbar {
+      background-color: black;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .header-container {
+      position: relative;
+      max-width: 100%;
+    }
+
+    .background-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+    }
+
+
+    #content {
+      background-color: #9AAB89;
+    }
+
+    #footer {
+      background-color: black;
+    }
+
+
+    #navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    #navbar a:hover {
+      background-color: green;
+    }
+
+ 
+    #footer {
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+
+    #footer div {
+      display: inline-block;
+      width: 33.33%;
+    }
+
+    #content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+ }
+
+.image-frame {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  vertical-align: top;
+}
+
+.image-frame img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Responsive styles */
+    @media (max-width: 768px) {
+      #navbar {
+        justify-content: center;
+      }
+      
+      .image-frame {
+        width: 80%;
+        
+}
+}
+</style>
+</head>
+<body>
+  <div id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <img src="header6.jpg" alt="The Spinc, Glendalough, Co Wicklow" class="background-img">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+  </header>
+
+  <div id="content">
+    <div class="image-frame">
+      <img src="glendalough.jpg" alt="Image 1">
+      <h3>Glendalough</h3><br>
+      <p>Glendalough, nestled in the heart of the Wicklow Mountains, is a place of serene beauty and ancient mystique. This enchanting valley in Ireland holds a rich history that stretches back over a millennium. Glendalough, which means "Valley of Two Lakes," is renowned for its breathtaking landscapes, lush forests, and shimmering lakes that reflect the towering cliffs and rugged hillsides. The area is steeped in spiritual significance, serving as the site of an ancient monastic settlement founded by St. Kevin in the 6th century. The remnants of this monastic city, including a round tower, churches, and stone crosses, still stand today, offering a glimpse into the past. Glendalough's ethereal atmosphere draws visitors from far and wide, providing a tranquil retreat where one can immerse themselves in nature, explore the intricacies of Irish history, and reconnect with their inner spirit.</p>
+    </div>
+    <div class="image-frame">
+      <img src="powerscourt-gardens.jpg" alt="Image 2">
+      <h3>Powerscourt House & Gardens</h3><br>
+      <p>Powerscourt House and Gardens, nestled in County Wicklow, Ireland, captivate with their natural beauty and architectural grandeur. The Palladian-style house, an embodiment of opulence, stands surrounded by 47 acres of meticulously manicured gardens. Terraces, lakes, and vibrant flower beds adorn the landscape, while the Great Sugar Loaf Mountain provides a breathtaking backdrop. It's a tranquil retreat where visitors can immerse themselves in nature, explore historic architecture, and find solace in the serenity of this enchanting place.</p>
+    </div>
+    <div class="image-frame">
+      <img src="avondale-house.jpg" alt="Image 3">
+      <h3>Avondale House</h3><br>
+      <p>Avondale House, located near Rathdrum, is a historic gem that transports visitors to a bygone era. This magnificent estate, situated in the heart of lush Wicklow countryside, invites guests to explore its grandeur and immerse themselves in its rich heritage. Built in the early 19th century, Avondale House showcases stunning Georgian architecture, adorned with intricate details and surrounded by enchanting gardens. Once the home of Charles Stewart Parnell, a prominent Irish political leader, the house is now a museum that provides a fascinating insight into Ireland's past. Visitors can stroll through the picturesque grounds, admire the majestic trees, and learn about the influential figures who once walked these hallowed halls. Avondale House in County Wicklow offers a captivating glimpse into history, combining architectural splendor and natural beauty in perfect harmony.</p>
+    </div>
+    <div class="image-frame">
+      <img src="Mount-Usher.jpg" alt="Image 4">
+      <h3>Mount Usher Gardens</h3><br>
+      <p>Mount Usher Gardens, located in County Wicklow, Ireland, beckon with their serene charm and botanical splendor. This picturesque garden, spread across 22 acres, is a haven of tranquility. Strolling along its meandering pathways, visitors encounter a rich tapestry of trees, shrubs, and vibrant flowers, carefully arranged to create a harmonious symphony of colors and scents. The Avoca River meanders through the garden, adding to its natural allure. With its idyllic setting, Mount Usher Gardens provide a peaceful escape where one can embrace the beauty of nature, admire the diversity of plant life, and find solace in the gentle whispers of the flowing river.</p>
+    </div>
+    <div class="image-frame">
+      <img src="victors-way.jpg" alt="Image 5">
+      <h3>Victor's Way</h3><br>
+      <p>Victor's Way, located in Roundwood, is an extraordinary and thought-provoking sculpture park that invites visitors on a unique journey of self-reflection and introspection. Created by the visionary artist Victor Langheld, this immersive outdoor space is a playground for the mind and senses. The park's collection of striking sculptures, designed to represent different facets of human existence, challenges conventional perspectives and prompts contemplation on the complexities of life. As visitors explore the winding paths and encounter each thought-provoking artwork, they are encouraged to question, reflect, and delve into their own personal journeys. Victor's Way is a remarkable sanctuary for those seeking a transformative and introspective experience amidst the captivating beauty of Wicklow's natural landscape.</p>
+    </div>
+    <div class="image-frame">
+      <img src="meeting-waters.jpg" alt="Image 6">
+      <h3>Meeting of the Waters, Avoca</h3><br>
+      <p>The Meeting of the Waters in Avoca, County Wicklow, Ireland, is a captivating natural phenomenon that has enthralled visitors for centuries. Here, the Avonmore and Avonbeg rivers converge, creating a picturesque fusion of flowing waters. This tranquil spot, immortalized in the poetry of Thomas Moore, holds a certain mystique and charm. Surrounded by verdant landscapes, the Meeting of the Waters offers a serene ambiance and a soothing escape from the hustle and bustle of everyday life. It is a place where one can witness the harmonious dance of two rivers, their currents merging and intertwining, creating a mesmerizing spectacle. The Meeting of the Waters in Avoca is a testament to the breathtaking beauty that County Wicklow has to offer, a destination that invites contemplation and a connection with nature.</p>
+    </div>
+    <div class="image-frame">
+      <img src="wicklow-gaol.jpg" alt="Image 7">
+      <h3>Wicklow Gaol</h3><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt at augue id euismod. Maecenas ac orci enim. Sed et nisi nec arcu luctus bibendum. Etiam aliquet tellus sed eros feugiat aliquam. Nam accumsan eleifend blandit. Curabitur eget posuere risus. Nullam laoreet accumsan risus eget malesuada.</p>
+    </div>
+    <div class="image-frame">
+      <img src="killruddery.jpg" alt="Image 8">
+      <h3>Killruddery House & Gardens</h3><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt at augue id euismod. Maecenas ac orci enim. Sed et nisi nec arcu luctus bibendum. Etiam aliquet tellus sed eros feugiat aliquam. Nam accumsan eleifend blandit. Curabitur eget posuere risus. Nullam laoreet accumsan risus eget malesuada.</p>
+    </div>
+    <div class="image-frame">
+      <img src="botanic.jpg" alt="Image 9">
+      <h3>National Botanic Gardens</h3><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt at augue id euismod. Maecenas ac orci enim. Sed et nisi nec arcu luctus bibendum. Etiam aliquet tellus sed eros feugiat aliquam. Nam accumsan eleifend blandit. Curabitur eget posuere risus. Nullam laoreet accumsan risus eget malesuada.</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div>Footer Section 1</div>
+    <div>Footer Section 2</div>
+    <div>Footer Section 3</div>
+  </div>
+</body>
+</html>
