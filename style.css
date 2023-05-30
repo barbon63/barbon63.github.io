@@ -1,5 +1,5 @@
 body {
-      font-family: Arial, sans-serif;
+      font-family: "Times New Roman", Times, serif;
       background-color: teal;
       border: 5px solid black;
 }
@@ -236,4 +236,3 @@ section {
       height: 300px;
       margin: 0 auto;
 }
-
