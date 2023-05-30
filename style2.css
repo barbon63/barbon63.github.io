@@ -1,0 +1,244 @@
+body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: teal;
+      border: 5px solid black;
+}
+
+h1 {
+      text-align: center;
+      color: yellow;
+}
+
+h2 {
+      text-align: left;
+      color: yellow;
+      font-style: italic;
+}
+
+h3 {
+      text-align: center;
+      color: yellow;
+}
+
+hr {
+      border: none;
+      border-top: 10px solid yellow;
+      width: 100%;
+}
+
+.bolded {
+      font-weight: bold;
+      font-size: 24px;
+}
+
+.clear {
+      clear: both;
+}
+
+.left-float {
+      float: left;
+      margin-right: 20px;
+} 
+
+.centered-image {
+      display: block;
+      margin-top: 120px;
+      margin-left: auto;
+      margin-right: auto;
+}
+    
+section {
+      margin-bottom: 30px;
+}   
+    
+#header {
+      padding: 20px;
+}
+
+#menu1, #menu2, #menu3, #menu4, #menu5 {
+      background-color: yellow;
+      margin: 5px 5px;
+      padding: 20px;
+      text-decoration: underline;
+      width: 60px;
+      float: left;
+}
+
+.opening-hours {
+      text-align: center;
+      color: yellow;
+}
+        
+#intro {
+      padding: 20px;
+}
+
+#intro-columns {
+      display: flex;
+      color: #F0E68C;
+}
+
+.intro-column {
+      flex: 1;
+      padding:10px;
+}
+
+.intro-image {
+      flex: 1;
+}
+
+.intro-image img {
+      float: right;
+}
+    
+#about {
+      padding: 20px;
+      color: #F0E68C;
+}
+
+.about-container {
+      margin-top: 20px;
+}
+
+.about-container::after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+.about {
+      width: calc(100% - 30px); 
+      margin-right: 40px;
+}
+
+.about h2 {
+      margin-top: 0;
+      text-align: left;
+}
+  
+#menus {
+      padding: 20px;
+}
+
+.menus-container {
+      margin-top: 20px;
+}
+
+.menus-container::after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+.menus {
+      width: calc(100% - 30px); 
+      margin-right: 40px;
+}
+
+.menus h2 {
+      margin-top: 0;
+      text-align: left;
+      padding-left: 340px;
+}
+    
+.menus ul {
+      color: #F0E68C;
+      padding-left: 340px;
+}
+
+.bar-container {
+      margin-top: 50px;
+      overflow: hidden; /* Clear floats */
+}
+    
+    .column {
+      float: left;
+}
+    
+    .column1 {
+      width: 20%; /* Width for Column 1 */
+      margin-right: 2%; /* Adjust the margin between columns */
+      margin-left: 20px; 
+}
+    
+    .column2 {
+      width: 53%; /* Width for Column 2 */  
+}
+    
+    .column3 {
+      width: 23%; /* Width for Column 3 */
+}
+.bar-container h2 {
+      margin-top: 0;
+      padding-left: 20px;
+}
+
+.bar-container ul {
+      margin-top: 0;
+      padding-left: 20px;
+      color: #F0E68C;
+}
+
+.bar-container table {
+      width: 45%;
+      background-color: yellow;
+      border: 3px solid #000;
+      border-spacing: 10px;
+      color: #000;     
+}
+
+.bar-container th,
+.bar-container td {
+      padding: 5px;
+      border: 1px solid #000;    
+}
+
+#terrace {
+      padding: 20px;
+      color: white;
+}
+
+.terrace-container {
+      margin-top: 20px;
+}
+
+.terrace-container::after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+.terrace {
+      width: calc(100% - 30px); 
+      margin-right: 40px;
+}
+
+.terrace h2 {
+      margin-top: 0;
+      text-align: left;
+      padding-left: 340px;
+}
+    
+.terrace ul {
+      color: #F0E68C;
+      padding-left: 340px;
+}
+
+#contact {
+      text-align: center;
+      padding: 20px;     
+}
+
+#contact a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #F0E68C;
+      text-decoration: underline;
+      text-align: center;
+}
+
+.map-container {
+      width: 400px;
+      height: 300px;
+      margin: 0 auto;
+}
