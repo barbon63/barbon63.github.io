@@ -10,6 +10,7 @@ h1 {
 }
 
 h2 {
+      margin-top: 0;     
       text-align: left;
       color: yellow;
       font-style: italic;
@@ -46,10 +47,6 @@ hr {
       margin-left: auto;
       margin-right: auto;
 }
-    
-section {
-      margin-bottom: 30px;
-}   
     
 #header {
       padding: 20px;
@@ -90,7 +87,6 @@ section {
 .intro-image img {
       float: right;
 }
-
     
 #about {
       padding: 20px;
@@ -110,11 +106,6 @@ section {
 .about {
       width: calc(100% - 30px); 
       margin-right: 40px;
-}
-
-.about h1 {
-      margin-top: 0;
-      text-align: left;
 }
   
 #menus {
@@ -136,59 +127,65 @@ section {
       margin-right: 40px;
 }
 
-.menus h1 {
-      margin-top: 0;
-      text-align: left;
+.menus-container h2 {
+      padding-left: 320px;
 }
     
 .menus ul {
       color: #F0E68C;
+      padding-left: 340px;
 }
 
-#bar {
-      padding: 20px;
-      color: white;
-}
-
- .bar-container {
+.bar-container {
       display: flex;
+      align-items: flex-start;
+      margin-top: 30px;      
 }
 
-.bar {
+.column {
       flex: 1;
-      
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
 }
 
-.bar img {
-      max-width: 100%;
+.column img {
+      flex-shrink: 0;
 }
 
-.bar h1 {
+.column-content {
+      margin-left: 10px;
+}
+
+.column-content ul {
+      white-space: nowrap;
+}
+
+.bar-container h2 {
+      padding-left: 10px;
+}
+
+.bar-container ul {
       margin-top: 0;
-}
-
-.bar ul {
-      margin-top: 0;
-      padding-left: 20px;
+      padding-left: 30px;
       color: #F0E68C;
 }
 
-.bar table {
-      width: 45%;
+.bar-container table {
+      width: 250px;
       background-color: yellow;
       border: 3px solid #000;
       border-spacing: 10px;
-      color: #000;     
+      color: #000;
+      margin-left: 20px;
 }
 
-.bar th,
-.bar td {
+.bar-container th,
+.bar-container td {
       padding: 5px;
       border: 1px solid #000;
-    
-
 }
-
+    
 #terrace {
       padding: 20px;
       color: white;
@@ -209,13 +206,13 @@ section {
       margin-right: 40px;
 }
 
-.terrace h1 {
-      margin-top: 0;
-      text-align: left;
+.terrace-container h2 {
+      padding-left: 320px;
 }
     
-.terrace ul {
+.terrace-container ul {
       color: #F0E68C;
+      padding-left: 340px;
 }
 
 #contact {
