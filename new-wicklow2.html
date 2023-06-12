@@ -3,105 +3,99 @@
 <head>
 <title>Absolutely Wicklow</title>
 <style>
-     body {font-family: "Times New Roman", Georgia, Serif;}
-     h1, h2, h3, h4, h5, h6 {
-     font-family: "Playfair Display";
-     letter-spacing: 3px;
-     color: #000;
-    }
-    p {color: #000;}
-    * {
+
+body {
+     font-family: "Times New Roman", Georgia, Serif;
+     background-color: #A3BC63;
+}
+*    {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    body {
-      background-color: #A3BC63;
-    }
-
-    #navbar {
+}
+h1, h2, h3, h4, h5, h6 {
+     font-family: "Playfair Display";
+     letter-spacing: 3px;
+     color: #000;
+}
+p    {
+     color: #000;
+}
+#navbar {
       background-color: black;
-    }
-
-    header {
+      display: flex;
+      justify-content: flex-end;
+}
+#navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+}
+#navbar a:hover {
+      background-color: #A3BB63;
+      color: #000;
+}
+header {
       position: relative;
-    }
-
-    .header-container {
+}
+.header-container {
       position: relative;
       max-width: 100%;
-    }
-
-    .background-img {
+}
+#intro {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      width: calc(30% * 3 + 20px * 2);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#intro h2 {
+      color: #333;
+}
+#intro p {
+      color: #555;
+}
+.background-img {
       display: block;
       width: 100%;
       height: auto;
-    }
-
-    .logo {
+}
+.logo {
       position: absolute;
       top: 10px;
       left: 10px;
       max-width: 150px;
       width: 100%;
       height: auto;
-    }
-
-    #content {
+}
+#content {
       background-color: #A3BC63;
-    }
-
-    #footer {
-      background-color: black;
-    }
-
-    #navbar {
       display: flex;
-      justify-content: flex-end;
-    }
-
-    #navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-    }
-
-    #navbar a:hover {
-      background-color: #A3BB63;
-      color: #000;
-    }
-
-     #footer {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: left;
+}
+#footer {
       padding: 60px;
       text-align: left;
       color: white;
       display: flex;
       justify-content: flex-end;
-    }
-
-    #footer div {
+      background-color: black;
+}
+ #footer div {
       display: inline-block;
       width: 33.33%;
-    }
-
-    #footer .social-icons {
+}
+#footer .social-icons {
       text-align: right;
-    }
-
-    #footer .social-icons a {
+}
+#footer .social-icons a {
       color: white;
       text-decoration: none;
       margin-left: 10px;
-    }
-    #content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: left;
-    }
-
-    .image-frame {
+}
+.image-frame {
       display: inline-block;
       flex-direction: column;
       align-items: center;
@@ -112,9 +106,8 @@
       background-color: white;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       vertical-align: top;
-    }
-
-    .image-frame img {
+}
+.image-frame img {
       max-width: 100%;
       max-height: 100%;
       border: 1px solid #ddd;
@@ -122,34 +115,15 @@
       padding: 5px;
 }
 
-    /* Responsive styles */
-    @media (max-width: 768px) {
+/* Responsive styles */
+@media (max-width: 768px) {
       #navbar {
         justify-content: center;
-      }
-      
-      .image-frame {
-        width: 80%;
-      }
-    }
-
-    /* New styles */
-    #intro {
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px auto;
-  width: calc(30% * 3 + 20px * 2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-    #intro h2 {
-      color: #333;
-    }
-
-    #intro p {
-      color: #555;
-    }
+ .image-frame {
+        width: 80%;
+}
+}
 </style>
 </head>
 
