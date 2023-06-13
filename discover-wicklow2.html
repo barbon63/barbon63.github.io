@@ -26,13 +26,11 @@ ul.topnav {
      margin: 0;
      padding: 0;
      overflow: hidden;
-     background-color: #333;
+     background-color: #000;
 }
-
 ul.topnav li {
      float: left;
 }
-
 ul.topnav li a {
      display: block;
      color: white;
@@ -40,23 +38,14 @@ ul.topnav li a {
      padding: 14px 16px;
      text-decoration: none;
 }
-
 ul.topnav li a:hover:not(.active) {
-     background-color: #111;
-}
-
-ul.topnav li a.active {
      background-color: #749059;
 }
-
+ul.topnav li a.active {
+     background-color: #111;
+}
 ul.topnav li.right {
      float: right;
-}
-
-/* Does this media query conflict with other two - it doesn't appear to */
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
 }
 header {
       position: relative;
@@ -65,45 +54,31 @@ header {
       position: relative;
       max-width: 100%;
 }
-#intro {
+#a-intro {
       position: relative;
       background-color: #749059;
       padding: 20px;
       margin: 20px auto;
       width: calc(30% * 3 + 20px * 2);     
 }
-#intro h2 {
+#a-intro h2 {
       color: #333;
 }
-#intro p {
+#a-intro p {
       color: #000;
 }
-#event-intro {
+#e-intro {
       position: relative;
       background-color: #fffdd6;
       padding: 20px;
       margin: 20px auto;
-      width: calc(30% * 3 + 20px * 2);
-      
+      width: calc(30% * 3 + 20px * 2);      
 }
-#event-intro h2 {
+#e-intro h2 {
       color: #333;
 }
-#event-intro p {
+#e-intro p {
       color: #000;
-}
-.corner-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 15%; /* Adjust the width as needed */
-      max-width: 100px; /* Set a maximum width for the image */
-      height: auto; /* The height will adjust automatically */
-}
-.background-img {
-      display: block;
-      width: 100%;
-      height: auto;
 }
 .header-text {
       position: absolute;
@@ -129,46 +104,6 @@ header {
       text-align: left;
       padding-top: 50px;
       padding-bottom: 50px;     
-}
-#footer {
-      padding: 60px;
-      text-align: left;
-      color: white;
-      display: flex;
-      justify-content: flex-end;
-      background-color: black;
-}
-#footer div {
-      display: inline-block;
-      width: 33.33%;
-}
-#footer .social-icons {
-      text-align: right;
-}
-#footer .social-icons a {
-      color: white;
-      text-decoration: none;
-      margin-left: 10px;
-}
-#footer a:link {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
-}
-#footer a:visited {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
-}
-#footer a:hover {
-  color: #749059;
-  background-color: transparent;
-  text-decoration: underline;
-}
-#footer a:active {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: underline;
 }
 .image-frame {
       display: inline-block;
@@ -220,9 +155,48 @@ header {
      cursor: pointer;
      width: 100%;
 }
-
 .button:hover {
      background-color: #555;
+}
+footer {
+      padding: 60px;
+      text-align: left;
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+      background-color: black;
+}
+footer div {
+      display: inline-block;
+      width: 33.33%;
+}
+footer .social-icons {
+      text-align: right;
+}
+footer .social-icons a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+}
+footer a:link {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #749059;
+  background-color: transparent;
+  text-decoration: underline;
+}
+footer a:active {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Responsive styles - need fixing */
@@ -239,12 +213,15 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .corner-image {
+    .corner-image {
     width: 25%; /* Adjust the width for smaller screens */
     max-width: 80px; /* Adjust the maximum width for smaller screens */
-  }
 }
-
+ul.topnav li.right, 
+ul.topnav li {
+        float: none;
+}
+}
 </style>
 </head>
 
@@ -252,8 +229,8 @@ header {
 
 <ul class="topnav">
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Attractions</a></li>
-  <li><a href="#contact">Events</a></li> 
+  <li><a href="#a-intro">Attractions</a></li>
+  <li><a href="#e-intro">Events</a></li> 
 </ul>
 
 <header>
@@ -262,12 +239,12 @@ header {
 </div>
 </header>
 
-<div id="intro">
-<h1 id="attractions">Wicklow's Top Attractions</h1><br>
+<!-- Start of ATTRACTIONS section -->
+
+<div id="a-intro">
+<h1>Wicklow's Top Attractions</h1><br>
 <p>Wicklow, Ireland, often referred to as the "Garden of Ireland," is a picturesque county that captures the essence of natural beauty and rich history. Located just south of Dublin, Wicklow offers a captivating blend of rugged mountains, lush green valleys, and stunning coastline. The enchanting Wicklow Mountains National Park is a haven for outdoor enthusiasts, boasting breathtaking hiking trails and serene lakes, such as Glendalough's famous Upper and Lower lakes. The county is also dotted with charming villages, like Avoca and Enniskerry, where traditional Irish hospitality can be experienced at cozy pubs and quaint tea houses. Wicklow's heritage is exemplified by the magnificent ruins of ancient monastic settlements, including the iconic Glendalough Monastic City, showcasing centuries-old stone structures and captivating stories. With its enchanting landscapes and a deep connection to Ireland's past, Wicklow truly offers a magical experience for visitors seeking tranquility, adventure, and a glimpse into the country's captivating history.</p>    
 </div>
-
-<!-- Start of ATTRACTIONS section -->
 
 <div id="content">
 <div class="image-frame">
@@ -324,16 +301,15 @@ header {
 <p>The Meeting of the Waters in Avoca, County Wicklow, is a captivating natural phenomenon that has enthralled visitors for centuries. Here, the Avonmore and Avonbeg rivers converge, creating a picturesque fusion of flowing waters. This tranquil spot, immortalized in the poetry of Thomas Moore, holds a certain mystique and charm. Surrounded by verdant landscapes, the Meeting of the Waters offers a serene ambiance and a soothing escape from the hustle and bustle of everyday life. It is a place where one can witness the harmonious dance of two rivers, their currents merging and intertwining, creating a mesmerizing spectacle. The Meeting of the Waters in Avoca is a testament to the breathtaking beauty that County Wicklow has to offer, a destination that invites contemplation and a connection with nature.</p>
 </div>
 
-
-
 </div>
+
 <!-- End of ATTRACTIONS section -->
 
 <!-- Start of EVENTS section -->
-<div id="content2">
 
-<div id="event-intro">
-<h1 id="events">Upcoming Events in Wicklow</h1><br>
+<div id="content2">
+<div id="e-intro">
+<h1>Upcoming Events in Wicklow</h1><br>
 <p>Wicklow is abuzz with anticipation as several thrilling events are on the horizon. The Kaleidoscope and Beyond the Pale festivals are set to transform the county into a vibrant hub of music, art and culture. Festival-goers can immerse themselves in a myriad of performances, including live music, theatrical shows and interactive art installations. For those seeking high-flying excitement, the Bray Air Display promises to be a spectacular showcase of aerobatic prowess, with breathtaking stunts and dazzling displays filling the skies above the beautiful coastal town. Meanwhile, Hell & Back Junior offers young adventurers an exhilarating obstacle course challenge, designed to test their strength, stamina, and teamwork. And for nature enthusiasts, the Ecotrail event provides an opportunity to explore Wicklow's stunning landscapes through a series of trail runs, promoting an eco-friendly approach to outdoor activities. With such a diverse range of upcoming events, Wicklow is sure to be a hub of excitement and entertainment for all who attend.</p>    
 </div>
 
@@ -392,9 +368,10 @@ header {
 </div>
 
 </div>
+
 <!-- End of EVENTS section -->
 
-<div id="footer">
+<footer>
 
 <div>
 Get in Touch with us<br>
@@ -402,12 +379,12 @@ Phone: +353 404 12345<br><br>
 
 Monday-Friday: 9.00 am - 8.00 pm<br>
 Saturday: 10.00 am - 6.00 pm<br>
-info@discoverwicklow.ie
+<a href="mailto:info@discoverwicklow.ie">info@discoverwicklow.ie</a>
 </div>
 
 <div>
-<a href="#attractions">Attractions</a><br>
-<a href="#events">Events</a>
+<a href="#a-intro">Attractions</a><br>
+<a href="#e-intro">Events</a>
 </div>
 
 <div class="social-icons">
@@ -415,6 +392,7 @@ info@discoverwicklow.ie
 <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
 </div>
 
-</div>
+</footer>
+
 </body>
 </html>
