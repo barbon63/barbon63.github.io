@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VICKY TAN COFFEE SHOP</title>
+<style>
+body {
+           background-color: black;
+           border: solid #884B38 5px;
+}
+p {         
+            color: white; /*All paragraphs, h2s and h3s will be white */
+}
+h3 {
+            margin-left: 20px;
+            color: #F0BE24;
+}
+#header {
+            padding-bottom: 5px; /*The header div will have a padding at the bottom of 20px.. instead of lots of <br> tags!!! */
+}
+#header h1 {  /*These styles will apply to h1s in the header div ONLY, not ALL h1s throughout the site */
+           color: #F0BE24; /*yellow */
+           font-weight: bold;
+           text-align: center;           
+}
+#header h2 {  /*These styles will apply to h2s in the header div ONLY, not ALL h2s throughout the site */
+            text-align: center;
+            font-style: italic;
+            color: white;
+} 
+#header h3 {  /*These styles will apply to h3s in the header div ONLY, not ALL h3s throughout the site */
+            text-align: center;
+            font-style: italic;
+            color: white;
+}            
+.navigation {
+  display: flex;
+  padding-bottom: 60px;  
+}
+.navigation a:link {
+  text-decoration: none;
+  color: black;
+}
+.navigation a:visited {
+  text-decoration: none;
+  color: black;
+}
+.navigation a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.navigation a:active {
+  text-decoration: underline;
+  color: black;
+}
+.center {
+  justify-content: center;
+}
+.item {
+  width: 100px;
+  background: #F0BE24;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+#beans {
+            display: flex;
+            clear: both;
+            padding-bottom: 40px;
+            margin-left: 20px;
+}
+#beans img {
+            width: 200px;
+            height: 200px;            
+}
+
+#beans p {
+            margin-left: 20px;
+}
+#menu {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60px;
+  margin-left: 20px;
+}
+#menu ul {
+  color: white;
+  list-style-type: none;
+}
+.column {
+  float: left;  
+}
+.photo {
+  width: 20%;
+}
+.list1 {
+  width: 10%;
+  padding-top: 40px; 
+}
+.list2 {
+  width: 70%;
+  padding-top: 40px;
+}
+#video {    
+            padding-bottom: 60px;
+            text-align: center;
+}
+#about {
+            display: flex;
+            clear: both;
+            padding-bottom: 60px;
+            margin-left: 20px;
+}
+#about img {
+            width: 200px;
+            height: 200px;
+}
+#about p {
+            margin-left: 20px;
+}
+#gallery {  
+            padding-bottom: 60px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;  
+}
+#gallery img {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+}
+
+#footer a {
+           color: #F0BE24;
+           text-align: center;
+}
+#footer p {
+           text-align: center;
+}
+
+</style>
+</head>
+<body>
+<!---------------------HEADER--------------------->
+
+<div id="header">
+<h1>VICKY TAN COFFEE SHOP</h1>
+<h2>There is something for everyone<br>warmth and comfort for you.</h2>
+<br>
+<center><img src="3.jpg" width="1280px" height="853px"></center>
+<br>
+<h3>This Coffee Shop was founded in 2010 by a lovely couple,<br>
+ Dianna Victoria Trifan and Jun Breavian Tan, who met in Dublin in 2005 and by incorporating<br>
+ their beautiful cultures together they established Vicky Tan.</h3>
+<br>
+<h3>OPENING HOURS:<br><br>MONDAY-SATURDAY<br><br>7am-4:30pm</h3>
+</div>
+
+<!---------------------NAVIGATION--------------------->
+
+<div class="navigation center">
+    <div class="item"><a href="#home">HOME</a></div>
+    <div class="item"><a href="#about">ABOUT US</a></div>
+    <div class="item"><a href="#beans">OUR BEANS</a></div>
+    <div class="item"><a href="#menu">OUR MENU</a></div>
+    <div class="item"><a href="#gallery">GALLERY</a></div>
+  </div>
+<!---------------------ABOUT--------------------->
+
+<h3>About Us</h3>
+<div id="about">
+<img src="coffee4.jpg" alt="Coffee Image">
+
+<p>Here at Vicky Tan we pride ourselves in our Ecuadorian coffee with its sweetness, body, fruitiness, and floral notes. 
+The cool winds and rich volcanic soil produce coffee that is delicious, well balanced and rounded. So why not pop in 
+and try our amazing coffee and treats from such a wonderfully biodiverse country. We also offer a wide range of pastries 
+and savory foods! (Whether you're gluten free, dairy free, or just need a little something different, we have an option for all!) 
+We are a small but cozy cafe that overlooks the beautiful lake. Come visit us to enjoy the calming views while enjoying a nice cup of coffee.
+You can find us at Calle San Marco N23-91, right across the Rio Grande. We hope to see you!<br><br> 
+A BIG WELCOME FROM DIANNA VICTORIA TRIFAN AND BREAVIAN TAN.</p>
+</div>
+
+<!---------------------BEANS--------------------->
+
+<h3>Our Beans</h3>
+<div id="beans">
+<img src="beans.jpg" alt="Coffee Image">
+<p>Vicky Tan Coffee Shop uses only Fair Trade Coffee from Equador. The exact location is called Puyo, 
+in the rainforest of the Amazonas river.<br> We love to support our people and their hard work because 
+thanks to them we all can have an exquisite coffee.<br> This Fair Trade campaign has expanded around 
+the globe and now every country that produces coffee beans has Fair trade certified farmers. 
+This includes: Equador, Brazil, Peru, Honduras, Vietnam, Colombia and Indonesia.<br><br>
+As our business gets bigger over the years we will be very happy to bring to you more varieties of 
+coffee beans from other countries, because YOU DESERVE IT!!.</p>
+</div>
+
+
+
+<!---------------------MENU--------------------->
+
+<div id="menu">
+
+  <div class="column photo">
+    <h3 style="margin-left: 0;">Our Menu</h3>
+    <img src="coffee3.jpg" alt="Coffee Image">
+  </div>
+
+  <div class="column list1">
+    <h3 style="color: white;">HOT DRINKS</h3>
+  <ul>
+    <li>Espresso</li>
+    <li>Americano</li>
+    <li>Cappuccino</li> 
+    <li>Latte</li>
+    <li>Flat White</li>
+    <li>Mocha</li>
+    <li>Vicky Tan</li>
+  </ul>
+  </div>
+
+  <div class="column list2">
+    <h3 style="color: white;">COLD DRINKS</h3>
+  <ul> 
+    <li>Iced Americano</li>
+    <li>Iced Latte</li>
+    <li>Iced Mocha</li> 
+    <li>Iced Cappuccino</li>
+    <li>Iced Tea</li>
+    <li>Iced Vanilla Matcha Latte</li>
+    <li>Iced Lavender Latte</li>
+  </ul>
+  </div>
+
+</div>
+
+<!---------------------VIDEO--------------------->
+
+<div id="video">
+<iframe src="https://www.youtube.com/embed/jYq1pHJYQmw" width="420px" height="420px";></iframe>
+</div>
+
+
+
+<!---------------------GALLERY--------------------->
+
+<center><h3>Gallery</h3></center>
+<div id="gallery">
+<img src="5.jpg" alt="Coffee Image">
+<img src="6.jpg" alt="Coffee Image">
+<img src="7.jpg" alt="Coffee Image">
+</div>
+
+<!---------------------FOOTER--------------------->
+
+<div id="footer">
+<p><a href="https://www.facebook.com">FACEBOOK</a></p>
+<p><a href="https://www.instagram.com">INSTAGRAM</a></p>
+<p><a href="https://www.beaufortcoffee.com">FOR MORE INFORMATION CLICK HERE</a></p>
+<br>
+<br>
+<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.878424017566!2d-6.2672602869644365!3d53.34543247217362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1sen!2sie!4v1685535104617!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+</iframe></center>
+</div>
+</body>
+</html>
