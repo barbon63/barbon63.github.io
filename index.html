@@ -164,57 +164,71 @@ header h1 {
 }
 
 /*************EVENTS SECTION*************/
+#events {
+    background-color: #fffdd6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-#events {      
-     background-color: #fffdd6;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     text-align: left;
-     padding-top: 50px;
-     padding-bottom: 50px;     
-}
 #e-intro {
-     position: relative;
-     background-color: #fffdd6;
-     padding: 20px;
-     margin: 20px auto;
-     width: calc(30% * 3 + 20px * 2);      
+    position: relative;
+    background-color: #fffdd6;
+    padding: 20px;
+    margin: 20px auto;
+    width: calc(30% * 3 + 20px * 2);
 }
+
 .image-frame2 {
-     display: inline-block;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     width: 30%;
-     margin: 10px;
-     padding: 20px;
-     background-color: #749059;
-     opacity: 0.83; /* Set the desired opacity */
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-     vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #749059;
+    opacity: 0.83;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    vertical-align: top;
 }
+
 .image-frame2 img {
-     max-width: 100%;
-     max-height: 100%;
-     border: 1px solid #ddd;
-     border-radius: 4px;
-     padding: 5px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.button-container-content {
+    flex: 1;
+}
+
 .button {
-     border: none;
-     outline: 0;
-     display: inline-block;
-     padding: 8px;
-     color: white;
-     background-color: #000;
-     text-align: center;
-     text-decoration: none;
-     cursor: pointer;
-     width: 100%;
+    border: none;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
 }
+
 .button:hover {
-     background-color: #555;
+    background-color: #555;
 }
 
 /*************FOOTER SECTION*************/
@@ -392,63 +406,86 @@ header h1 {
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e1.jpg" alt="Beyond the Pale Festival" title="Beyond the Pale Festival">
+<div class="button-container-content">
 <h3>Beyond the Pale</h3>
 <p>Glendalough Estate</p><br>
 <p>June 16th - June 18th 2023</p><br>
 <p>Three Days of sensational music, art &amp; food in the spectacular surroundings of the Wicklow countryside</p><br>
+</div>
 <p><a href="https://www.itsbeyondthepale.ie" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e2.jpg" alt="Kaleidoscope 2023 Festival" title="Kaleidoscope 2023 Festival">
+<div class="button-container-content">
 <h3>Kaleidoscope 2023</h3>
 <p>Russborough House, Blessington</p><br>
 <p>June 30th - July 2nd 2023</p><br>
 <p>Ireland's No. 1 Music and Arts Camping Festival for Families and Friends, in the heart of Blessington</p><br>
+</div>
 <p><a href="https://www.kaleidoscopefestival.ie" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e3.jpg" alt="Bray Air Display 2023" title="Bray Air Display 2023">
+<div class="button-container-content">
 <h3>Bray Air Display</h3>
 <p>Bray Seafront</p><br>
 <p>July 29th - July 30th 2023</p><br>
 <p>One of Europe's best air shows, attracting thousands of people to the coastal town for this annual event.</p><br>
+</div>
 <p><a href="https://brayairdisplay.com" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e4.jpg" alt="Designer Minds Summer Camps" title="Designer Minds Summer Camps">
+<div class="button-container-content">
 <h3>Childrens' Summer Camps</h3>
 <p>Bray, Greystones, Arklow and Wicklow Town</p><br>
 <p>July/Aug 2023</p><br>
 <p>Fun & interactive Summer camps for primary school children in various locations across Wicklow</p><br>
+</div>
 <p><a href="https://designerminds.ie" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e5.jpg" alt="Hell &amp; Back Junior 2023" title="Hell &amp; Back Junior 2023">
+<div class="button-container-content">
 <h3>Hell &amp; Back Junior</h3>
 <p>Killruddery, Bray</p><br>
 <p>Aug 26th/27th and Sep 30th 2023</p><br>
 <p>A fun and exhilarating 3KM obstacle challenge for 8-12 year olds seeking the ultimate outdoor adventure!</p><br>
+</div>
 <p><a href="https://www.hellandback.ie/junior" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 <div class="image-frame2">
+<div class="button-container">
 <img src="images/e6.jpg" alt="EcoTrail Wicklow 2023" title="EcoTrail Wicklow 2023">
+<div class="button-container-content">
 <h3>EcoTrail Wicklow</h3>
 <p>Bray to the Wicklow Mountains National Park</p><br>
 <p>September 30th 2023</p><br>
 <p>EcoTrail Wicklow is part of the international circuit of races in 13 destinations around the world</p><br>
+</div>
 <p><a href="https://wicklow.ecotrail.com/en" class="button" target="_blank">More Details</a></p>
+</div>
 </div>
 
 </div>
 
 <!-- End of EVENTS section -->
-
 <!-- Start of FOOTER section -->
 
 <div id="footer">
