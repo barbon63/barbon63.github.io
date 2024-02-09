@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* To prevent scrolling */
+  }
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('photo.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Opaque box */
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Drop shadow */
+  }
+  .logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content p, .content h2 {
+    font-family: sans-serif; /* Set font to sans-serif */
+  }
+  .social-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+  }
+  .social-icons a {
+    margin-right: 10px;
+  }
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white; /* Make the text white */
+  }
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="background"></div>
+  <div class="content">
+    <img src="logo.png" alt="Logo" class="logo">
+    <p>WELCOME TO THE NEW HOME PAGE OF</p>
+    <h2>Nouveau Design Management Ltd</h2>
+    <p>COMING SOON</p>
+  </div>
+  <div class="social-icons">
+    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+  </div>
+  <a href="mailto:james@ndm.ie" class="contact-link">james@ndm.ie</a>
+</div>
+
+</body>
+</html>
