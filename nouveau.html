@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars */
+            font-family: Arial, sans-serif; /* Set sans-serif font */
+            color: #333; /* Set dark grey color */
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url("photo.jpg"); /* Set background image */
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Apply a blur effect */
+        }
+        .opaque-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; /* Increase width of the box */
+            max-width: 500px; /* Optional: set max width */
+            background-color: rgba(255, 255, 255, 0.7); /* Less opaque white background color */
+            padding: 40px; /* Increase padding to make the box bigger */
+            text-align: center;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); /* Drop shadow */
+        }
+        .logo {
+            max-width: 220px; /* Increase the maximum width of the logo */
+            margin-bottom: 20px; /* Optional: add some spacing between logo and content */
+        }
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Opaque Box -->
+    <div class="opaque-box">
+        <!-- Logo -->
+        <img class="logo" src="logo.png" alt="Logo">
+        <!-- Content of the opaque box goes here -->
+        <h2>Design Management</h2>
+        <p>COMING SOON</p>
+    </div>
+
+    <!-- Social icons -->
+    <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+</body>
+</html>
+
